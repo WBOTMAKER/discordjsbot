@@ -1,0 +1,17 @@
+{
+  "name": "bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "discord.js": "^11.4.2",
+    "moment": "^2.22.2",
+    "moment-duration-format": "^2.2.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "테스트용 입니다."
+  },
+  "author": "",
+  "license": "STAY CUTE TEAM"
+}
