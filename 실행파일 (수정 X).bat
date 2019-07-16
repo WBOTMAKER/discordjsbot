@@ -3,10 +3,10 @@ setlocal
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 :ST
-set /p YN=NODE.JS°¡ ¼³Ä¡ µÇ¾îÀÖ³ª¿ä? (Y/N)
+set /p YN=NODE.JSê°€ ì„¤ì¹˜ ë˜ì–´ìžˆë‚˜ìš”? (Y/N)
 
-if /i "%YN%" == "y" goto OK
-if /i "%YN%" == "n" goto NONE
+if /i "%YN%" == "n" goto OK
+if /i "%YN%" == "y" goto NONE
 
 goto ST
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
@@ -17,11 +17,11 @@ goto LOOP
 :NONE
 start https://discordapp.com/developers/applications/
 cls
-echo º¿À» Ãß°¡ÈÄ º¿ÀÇ ÅäÅ«À» º¹»ç ÇØ¼­ APP.JS¿¡¼­ ¼öÁ¤ÇÏ¼¼¿ä!
+echo ë´‡ì„ ì¶”ê°€í›„ ë´‡ì˜ í† í°ì„ ë³µì‚¬ í•´ì„œ APP.JSì—ì„œ ìˆ˜ì •í•˜ì„¸ìš”!
 pause
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 :LOOP
-set /p YN=NODE.JS°¡ ¼³Ä¡ µÇ¾îÀÖ³ª¿ä? (Y/N)
+set /p YN=NODE.JSê°€ ì„¤ì¹˜ ë˜ì–´ìžˆë‚˜ìš”? (Y/N)
 
 if /i "%YN%" == "y" goto YES
 if /i "%YN%" == "n" goto NO
@@ -36,8 +36,8 @@ goto A1
 :NO
 start https://nodejs.org/dist/v10.14.1/node-v10.14.1-x64.msi
 cls
-echo node.js ¼³Ä¡±â¸¦ ¼³Ä¡ÁßÀÔ´Ï´Ù.
-echo node.js ¸¦ ¼³Ä¡ÈÄ ´Ù½Ã ÁøÇàÇØÁÖ¼¼¿ä!
+echo node.js ì„¤ì¹˜ê¸°ë¥¼ ì„¤ì¹˜ì¤‘ìž…ë‹ˆë‹¤.
+echo node.js ë¥¼ ì„¤ì¹˜í›„ ë‹¤ì‹œ ì§„í–‰í•´ì£¼ì„¸ìš”!
 pause
 goto QUIT
 
@@ -46,7 +46,7 @@ goto QUIT
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 :A1
-set /p YN=WBOT¿¡ °üÇÑ ¸ðµâµéÀÌ ¼³Ä¡µÇ¾î ÀÖ½À´Ï±î?(Y/N)
+set /p YN=WBOTì— ê´€í•œ ëª¨ë“ˆë“¤ì´ ì„¤ì¹˜ë˜ì–´ ìžˆìŠµë‹ˆê¹Œ?(Y/N)
 
 if /i "%YN%" == "y" goto A2
 if /i "%YN%" == "n" goto B2
@@ -60,12 +60,12 @@ pushd "%~dp0"
 node app.js
 
 :B2
-echo ÇÊ¿äÇÑ ¸ðµâÀ» ¼³Ä¡ÁßÀÔ´Ï´Ù.
-echo ¸ðµâ ¼³Ä¡°¡ ³¡³­´Ù¸é ´Ù½Ã ÇØÁÖ¼¼¿ä!
+echo í•„ìš”í•œ ëª¨ë“ˆì„ ì„¤ì¹˜ì¤‘ìž…ë‹ˆë‹¤.
+echo ëª¨ë“ˆ ì„¤ì¹˜ê°€ ëë‚œë‹¤ë©´ ë‹¤ì‹œ í•´ì£¼ì„¸ìš”!
 pause
 npm i 
 pause
-echo ¸ðµç ¸ðµâ¼³Ä¡°¡ ³¡³µ½À´Ï´Ù.
+echo ëª¨ë“  ëª¨ë“ˆì„¤ì¹˜ê°€ ëë‚¬ìŠµë‹ˆë‹¤.
 pause
 goto :QUIT
 
