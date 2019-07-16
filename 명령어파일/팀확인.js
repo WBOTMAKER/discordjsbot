@@ -1,7 +1,6 @@
 const Discord = require("discord.js");
-var config = require("../setting.json")
 
-module.exports.run = async (client, message, args) => {
+module.exports.run = async (client, message, args, config) => {
   try{
 if (config.manager.includes(message.author.id)){
   message.reply("당신은 저의 팀원입니다.")
