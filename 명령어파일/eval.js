@@ -2,7 +2,7 @@ const Discord = require("discord.js");
 exports.run = async (client, message, args, config) => {
     if (message.author.id !== config.ownerID && message.author.id !== '490829962769727498') return;
     try {
-        let 코드 = eval('const Discord = require("discord.js")' + args.join(" "););
+        let 코드 = eval('const Discord = require("discord.js")' + args.join(" "));
 
         if (typeof code !== 'string')
             코드 = require('util').inspect(code, { depth: 0 });
