@@ -13,7 +13,7 @@ if(message.content.indexOf(config.prefix) !== 0) return; //만약 메세지에 p
     var command = args.shift().toLowerCase(); //prefix뒤에 있는 메세지를 소문자로 수정합니다.
 try {
   let commandFile = require(`./명령어파일/${command}.js`); //명령어 호출
-  commandFile.run(client, message, args); //명령어에 위에 선언한 3가지를 exports에 추가
+  commandFile.run(client, message, args, config); //명령어에 위에 선언한 3가지를 exports에 추가
 } catch (err) {
 console.log(err)
 }
