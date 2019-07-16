@@ -10,7 +10,7 @@ exports.run = async (client, message, args, config) => {
             .setAuthor('이블')
             .setColor('RANDOM')
             .addField('입력값', `\`\`\`js\nconst Discord = require("discord.js")\n\nargs.join(" ");\`\`\``)
-            .addField('출력값', `\`\`\`js\n${code}\n\`\`\``)
+            .addField('출력값', `\`\`\`js\n${코드}\n\`\`\``)
         message.channel.send(embed)
     } catch (e) {
         message.channel.send(`\`\`\`js\n${e}\n\`\`\``);
