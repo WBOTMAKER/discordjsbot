@@ -66,5 +66,5 @@ STAYCUTE TEAM의 오픈소스입니다.
 여러분이 신경 안쓰시겠지만
 ==========================
 
-https://discord.gg/DtWPzy STAYCUTE의 초대링크입니다
+https://discord.gg/u8AYWkH STAYCUTE의 초대링크입니다
 -------------------------------
